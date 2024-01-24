@@ -1,0 +1,56 @@
+Algorithme CompterMotsEtVoyelles(phrase):
+    // Initialiser les compteurs
+    nombreDeMots <- 0
+    nombreDeVoyelles <- 0
+    
+    // Lire chaque caractère de la phrase jusqu'au point
+    Pour chaque caractère dans phrase, tant que caractère n'est pas un point:
+        // Vérifier si le caractère est une lettre (vérification de l'alphabet)
+        Si caractère est une lettre:
+            // Incrémenter le nombre de voyelles si le caractère est une voyelle
+            Si caractère est une voyelle (A, E, I, O, U, Y):
+                nombreDeVoyelles <- nombreDeVoyelles + 1
+        
+        // Vérifier si le caractère est un espace pour compter les mots
+        Si caractère est un espace:
+            nombreDeMots <- nombreDeMots + 1
+    
+    // Afficher les résultats
+    Afficher "Nombre de mots dans la phrase:", nombreDeMots
+    Afficher "Nombre de voyelles dans la phrase:", nombreDeVoyelles
+
+Fin de l'algorithme
+Notez que cet algorithme suppose une phrase correctement formée avec des mots séparés par un seul espace et se termine par un point. Vous devrez adapter cette structure selon vos besoins spécifiques et le langage de programmation que vous utilisez.
+
+
+
+
+
+
+Algorithme SommeElementsDistincts(ensemble1, ensemble2):
+    // Initialiser un tableau pour suivre les éléments déjà rencontrés
+    elementsRencontres <- tableau vide
+    
+    // Initialiser la somme à 0
+    somme <- 0
+    
+    // Parcourir les éléments de l'ensemble 1
+    Pour chaque élément1 dans ensemble1:
+        // Vérifier si l'élément1 n'a pas déjà été rencontré
+        Si élément1 n'est pas dans elementsRencontres:
+            // Ajouter l'élément1 à la somme et au tableau des éléments rencontrés
+            somme <- somme + élément1
+            Ajouter élément1 à elementsRencontres
+    
+    // Parcourir les éléments de l'ensemble 2
+    Pour chaque élément2 dans ensemble2:
+        // Vérifier si l'élément2 n'a pas déjà été rencontré
+        Si élément2 n'est pas dans elementsRencontres:
+            // Ajouter l'élément2 à la somme et au tableau des éléments rencontrés
+            somme <- somme + élément2
+            Ajouter élément2 à elementsRencontres
+    
+    // Afficher le résultat
+    Afficher "La somme des éléments distincts est:", somme
+
+Fin de l'algorithme
